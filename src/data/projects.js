@@ -2,7 +2,7 @@ export const ProjectsList = [
   {
     id: '1',
     title: 'New York Times - News Application',
-    description: `The app has been redesigned`,
+    description: `The new york times app has been redesigned`,
     expoIcon: true
   },
   {

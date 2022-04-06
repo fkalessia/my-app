@@ -13,13 +13,11 @@ import { DocumentHead, MDXComponents } from '../../src/components'
 import imageMetadata from '../../src/utils/imageMetaData'
 import {
   AuthorCard,
-  SubscribeCard,
   ShareArticle,
   ArticleNavigator,
   TimeToRead,
   PublishedDate,
-  Tag,
-  SponsorCard
+  Tag
 } from '../../src/components/BlogPostPage'
 
 export const readBlogPost = async (slug) => {
@@ -46,7 +44,7 @@ export const getStaticProps = async (ctx) => {
 
   const {
     content,
-    data: { title, date, tag, canonicalUrl }
+    data: { title, date, tag }
   } = matter(postContent)
 
   return {
@@ -61,21 +59,12 @@ export const getStaticProps = async (ctx) => {
       slug,
       timeToRead,
       allPosts,
-      tag,
-      canonicalUrl
+      tag
     }
   }
 }
 
-const BlogPostPage = ({
-  title,
-  date,
-  source,
-  timeToRead,
-  tag,
-  allPosts,
-  canonicalUrl
-}) => {
+const BlogPostPage = ({ title, date, source, timeToRead, tag, allPosts }) => {
   const { query } = useRouter()
   const slug = query.slug
 
@@ -85,11 +74,7 @@ const BlogPostPage = ({
 
   return (
     <>
-      <DocumentHead
-        pageTitle={`${title} by Fatih`}
-        postPath={`/${slug}/`}
-        canonicalUrl={canonicalUrl}
-      />
+      <DocumentHead pageTitle={`${title} by Fatih`} postPath={`/${slug}/`} />
       <VStack spacing={8} alignItems="stetch" w="full" as="section" pt={28}>
         <VStack spacing={3} alignItems="flex-start">
           <Heading size="lg">{title}</Heading>
@@ -117,7 +102,6 @@ const BlogPostPage = ({
           nextArticle={nextArticle}
         />
 
-        <SubscribeCard />
         <AuthorCard />
       </VStack>
     </>

@@ -6,7 +6,7 @@ const shortname = 'fatih'
 const description = 'Im Fatih Sr. Full-Stack Developer'
 const socialBanner = '/card.png'
 
-const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
+const DocumentHead = ({ pageTitle, postPath }) => {
   let postUrl = `${siteURL}`
 
   if (postPath) {
@@ -21,7 +21,6 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta content="#6B46C1" name="theme-color" />
       <meta content="#6B46C1" name="msapplication-TileColor" />
-      <link rel="canonical" href={canonicalUrl} />
 
       <link rel="apple-touch-icon" href="/favicon.jpg" />
       <meta content={description} name="description" />
