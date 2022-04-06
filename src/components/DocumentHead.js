@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
 const siteURL = 'https://ffatih.netlify.dev'
-const author = 'Fatih Karadağ'
+const author = 'Fatih '
 const shortname = 'ffatih'
-const description = 'Im Fatih Karadağ - Sr. Full-Stack Developer.'
+const description = 'Im Fatih  - Sr. Full-Stack Developer.'
 const socialBanner = '/card.png'
 
 const DocumentHead = ({
@@ -33,11 +33,7 @@ const DocumentHead = ({
       <meta name="author" content={author} />
       <meta name="author" content={shortname} />
       <meta name="publisher" content={author} />
-      <meta
-        name="keywords"
-        content="Im Fatih Karadağ - Sr. Full-Stack Developer."
-      />
-
+      <meta name="keywords" content="Im Fatih - Sr. Full-Stack Developer." />
       <meta name="robots" content="index,follow" />
       <meta
         name="googlebot"
@@ -55,15 +51,12 @@ const DocumentHead = ({
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
       <meta
         property="og:site_name"
-        content="Im Fatih Karadağ - Sr. Full-Stack Developer."
+        content="Im Fatih  - Sr. Full-Stack Developer."
       />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={shortname} />
-      <meta
-        name="twitter:title"
-        content="Fatih Karadağ - Sr. Full-Stack Developer."
-      />
+      <meta name="twitter:title" content="Fatih - Sr. Full-Stack Developer." />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={socialBanner} />
     </Head>
