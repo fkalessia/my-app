@@ -9,7 +9,7 @@ import {
   useMediaQuery
 } from '@chakra-ui/react'
 
-import { GITHUB, EMAIL } from '../data/socialLinks'
+import { GITHUB, EMAIL, LINKEDIN } from '../data/socialLinks'
 
 const Footer = () => {
   const [isMobile] = useMediaQuery('(max-width: 768px)')
@@ -53,6 +53,11 @@ const Footer = () => {
                 Github
               </Text>
             </Link>
+            <Link isExternal href={LINKEDIN}>
+              <Text fontSize="sm" color={textMode}>
+                LinkedIn
+              </Text>
+            </Link>
             <Link isExternal href={EMAIL}>
               <Text fontSize="sm" color={textMode}>
                 Email
@@ -71,6 +76,11 @@ const Footer = () => {
             <Link isExternal href={GITHUB}>
               <Text fontSize="sm" color={textMode}>
                 GitHub
+              </Text>
+            </Link>
+            <Link isExternal href={LINKEDIN}>
+              <Text fontSize="sm" color={textMode}>
+                LinkedIn
               </Text>
             </Link>
             <Link isExternal href={EMAIL}>

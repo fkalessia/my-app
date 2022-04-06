@@ -56,7 +56,7 @@ const Navbar = (props) => {
             fontSize={{ base: '0px', md: '32px' }}
             fontWeight={{ base: '0', md: '600' }}
           >
-            Fatih
+            <LinkItem href="/">Fatih</LinkItem>
           </Text>
         </Flex>
 
@@ -70,8 +70,8 @@ const Navbar = (props) => {
             mt={{ base: 4, md: 0 }}
           >
             <LinkItem href="/">Home</LinkItem>
-            <LinkItem href="/blog">Blog</LinkItem>
             <LinkItem href="/about">About</LinkItem>
+            <LinkItem href="/blog">Blog</LinkItem>
           </Stack>
         ) : (
           <Stack
@@ -82,9 +82,8 @@ const Navbar = (props) => {
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
           >
-            <LinkItem href="/">Home</LinkItem>
-            <LinkItem href="/blog">Blog</LinkItem>
             <LinkItem href="/about">About</LinkItem>
+            <LinkItem href="/blog">Blog</LinkItem>
           </Stack>
         )}
         <Box flex={1} align="right">
