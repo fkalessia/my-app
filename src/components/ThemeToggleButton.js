@@ -1,9 +1,9 @@
-import { AnimatePresence, motion } from 'framer-motion'
-import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
-import { FiSun, FiMoon } from 'react-icons/fi'
+import { AnimatePresence, motion } from 'framer-motion';
+import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { FiSun, FiMoon } from 'react-icons/fi';
 
 const ThemeToggleButton = () => {
-  const { toggleColorMode } = useColorMode()
+  const { toggleColorMode } = useColorMode();
 
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
@@ -23,7 +23,7 @@ const ThemeToggleButton = () => {
         ></IconButton>
       </motion.div>
     </AnimatePresence>
-  )
-}
+  );
+};
 
-export default ThemeToggleButton
+export default ThemeToggleButton;

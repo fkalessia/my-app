@@ -9,7 +9,7 @@ import {
   useMediaQuery
 } from '@chakra-ui/react'
 
-import { GITHUB, EMAIL, LINKEDIN } from '../data/socialLinks'
+import { GITHUB, LINKEDIN, EMAIL } from '../data/socialLinks'
 
 const Footer = () => {
   const [isMobile] = useMediaQuery('(max-width: 768px)')
@@ -19,7 +19,6 @@ const Footer = () => {
   return (
     <VStack pb={8} as="footer" alignItems="flex-start">
       <Divider />
-
       <Stack
         w="full"
         direction={{ base: 'column', md: 'row' }}
@@ -48,14 +47,14 @@ const Footer = () => {
               </Text>
             }
           >
-            <Link isExternal href={GITHUB}>
-              <Text fontSize="sm" color={textMode}>
-                Github
-              </Text>
-            </Link>
             <Link isExternal href={LINKEDIN}>
               <Text fontSize="sm" color={textMode}>
                 LinkedIn
+              </Text>
+            </Link>
+            <Link isExternal href={GITHUB}>
+              <Text fontSize="sm" color={textMode}>
+                Github
               </Text>
             </Link>
             <Link isExternal href={EMAIL}>
@@ -73,14 +72,14 @@ const Footer = () => {
               </Text>
             }
           >
-            <Link isExternal href={GITHUB}>
-              <Text fontSize="sm" color={textMode}>
-                GitHub
-              </Text>
-            </Link>
             <Link isExternal href={LINKEDIN}>
               <Text fontSize="sm" color={textMode}>
                 LinkedIn
+              </Text>
+            </Link>
+            <Link isExternal href={GITHUB}>
+              <Text fontSize="sm" color={textMode}>
+                Github
               </Text>
             </Link>
             <Link isExternal href={EMAIL}>

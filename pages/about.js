@@ -8,6 +8,7 @@ import {
 } from '@chakra-ui/react'
 import { MdCheckCircle } from 'react-icons/md'
 
+import TagsCloud from '../src/components/BlogIndexPage/TagsCloud'
 import { DocumentHead, ExternalLink } from '../src/components'
 
 const AboutPage = () => {
@@ -42,64 +43,7 @@ const AboutPage = () => {
           Skills
         </Heading>
 
-        <List spacing={4}>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            PHP
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            MySQL
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            Html/Css/Jquery
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            JavaScript
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            Nodejs
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            Flutter
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            Bootstrap
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            Laravel
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            React-Redux
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            MERN
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            MongoDB
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            Socket
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            Vue
-          </ListItem>
-          <ListItem>
-            <ListIcon as={MdCheckCircle} color="blue.500" />
-            GIT
-          </ListItem>
-        </List>
+        <TagsCloud />
 
         <Heading size="lg" as="h1" pt={8}>
           Development Projects

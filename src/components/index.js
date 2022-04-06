@@ -1,6 +1,25 @@
+import ExternalLink from './ExternalLink'
 import MainLayout from './MainLayout'
 import Fonts from './Fonts'
-import DocumentHead from './DocumentHead'
 import Hero from './Hero'
-import ExternalLink from './ExternalLink'
-export { MainLayout, Fonts, DocumentHead, Hero, ExternalLink }
+import ProjectsSectionList from './ProjectsSectionList'
+import ThemeToggleButton from './ThemeToggleButton'
+import BlogPostCard from './BlogPostCard'
+import MDXComponents from './MDXComponents'
+import LatestPostsSection from './LatestPostsSection'
+import DocumentHead from './SEO'
+import TagsSummary from './TagSummary'
+
+export {
+  ExternalLink,
+  MainLayout,
+  Fonts,
+  Hero,
+  ProjectsSectionList,
+  ThemeToggleButton,
+  BlogPostCard,
+  MDXComponents,
+  LatestPostsSection,
+  DocumentHead,
+  TagsSummary
+}

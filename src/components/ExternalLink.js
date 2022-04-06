@@ -1,4 +1,4 @@
-import { Link, useColorModeValue as mode } from '@chakra-ui/react'
+import { Link, useColorModeValue as mode } from '@chakra-ui/react';
 
 const ExternalLink = ({ children, ...linkProps }) => {
   return (
@@ -14,7 +14,7 @@ const ExternalLink = ({ children, ...linkProps }) => {
         {children}
       </Link>
     </span>
-  )
-}
+  );
+};
 
-export default ExternalLink
+export default ExternalLink;

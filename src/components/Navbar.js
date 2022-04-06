@@ -70,8 +70,8 @@ const Navbar = (props) => {
             mt={{ base: 4, md: 0 }}
           >
             <LinkItem href="/">Home</LinkItem>
-            <LinkItem href="/about">About</LinkItem>
             <LinkItem href="/blog">Blog</LinkItem>
+            <LinkItem href="/about">About</LinkItem>
           </Stack>
         ) : (
           <Stack

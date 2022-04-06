@@ -1,5 +1,5 @@
 ---
-title: 'The Node.js system'
+title: 'How to show Touch indicator on iOS simulator'
 date: '2016-04-22'
 thumbnail: '/thumbnails/node.png'
 slug: 'nodejs-system'
@@ -58,5 +58,3 @@ This is a JavaScript library that implements high-level Node.js API (a.k.a. node
 <img src='https://miro.medium.com/max/451/1*dTYKv5fII4doUAqJSA51Qg.png' />
 
 The image borrowed above clarifies and represents a complete Node.js System. I hope this article has made things more clear as it did to me.
-
-> [Orignally Published at Hackernoon.com](https://medium.com/hackernoon/the-node-js-system-51090c35dddc)

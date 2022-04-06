@@ -1,17 +1,12 @@
 import Head from 'next/head'
 
-const siteURL = 'https://ffatih.netlify.dev'
-const author = 'Fatih '
-const shortname = 'ffatih'
-const description = 'Im Fatih  - Sr. Full-Stack Developer.'
+const siteURL = 'https://ffatih.netlify.app'
+const author = 'Fatih K.'
+const shortname = 'fatih'
+const description = 'Im Fatih Sr. Full-Stack Developer'
 const socialBanner = '/card.png'
 
-const DocumentHead = ({
-  pageTitle,
-
-  postPath,
-  canonicalUrl
-}) => {
+const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
   let postUrl = `${siteURL}`
 
   if (postPath) {
@@ -28,12 +23,13 @@ const DocumentHead = ({
       <meta content="#6B46C1" name="msapplication-TileColor" />
       <link rel="canonical" href={canonicalUrl} />
 
-      <link rel="apple-touch-icon" href="/favivon.jpg" />
+      <link rel="apple-touch-icon" href="/favicon.jpg" />
       <meta content={description} name="description" />
       <meta name="author" content={author} />
       <meta name="author" content={shortname} />
       <meta name="publisher" content={author} />
-      <meta name="keywords" content="Im Fatih - Sr. Full-Stack Developer." />
+      <meta name="keywords" content="Fatih Full-Stack Developer." />
+
       <meta name="robots" content="index,follow" />
       <meta
         name="googlebot"
@@ -49,14 +45,11 @@ const DocumentHead = ({
       <meta name="og:image:alt" content={socialBanner} />
       <meta property="og:url" content={postPath ? postUrl : siteURL} />
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
-      <meta
-        property="og:site_name"
-        content="Im Fatih  - Sr. Full-Stack Developer."
-      />
+      <meta property="og:site_name" content="Fatih's Blog" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={shortname} />
-      <meta name="twitter:title" content="Fatih - Sr. Full-Stack Developer." />
+      <meta name="twitter:title" content="Fatih's Blog" />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={socialBanner} />
     </Head>

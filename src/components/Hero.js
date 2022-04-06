@@ -4,13 +4,19 @@ import {
   VStack,
   Heading,
   Text,
+  HStack,
   AspectRatio,
   Flex
 } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import Image from 'next/image'
-
 import ExternalLink from './ExternalLink'
+
+const RotateBox = styled.span`
+  &:hover img {
+    transform: rotate(20deg);
+  }
+`
 
 const Hero = () => {
   return (
@@ -31,13 +37,21 @@ const Hero = () => {
             alignItems="center"
           >
             <Heading size="lg" as="h1">
+              <RotateBox>
+                <Image
+                  src="/handwave.png"
+                  width={24}
+                  height={24}
+                  alt="Hand Wave Emoji"
+                />
+              </RotateBox>{' '}
               Hey, I&apos;m Fatih
             </Heading>
           </Stack>
 
           <Text lineHeight="175%" as="h2" fontSize="lg">
-            Experienced in building web applications in the Cloud
-            <strong>(AWS)</strong> with a total of over <strong>5+</strong>{' '}
+            Experienced in building web applications in the Cloud(
+            <strong>AWS</strong>) with a total of over <strong>5+</strong>{' '}
             years.
           </Text>
           <Text as="h2" fontSize="lg">
@@ -55,6 +69,23 @@ const Hero = () => {
             I also experience in creating real-time <strong>MERN</strong>{' '}
             applications.
           </Text>
+          <HStack>
+            <Text>
+              <ExternalLink href="https://linkedin.com/in/ffatihkaradag">
+                LinkedIn
+              </ExternalLink>
+            </Text>
+            <Text>
+              <ExternalLink href="https://github.com/ffatihkaradag">
+                GitHub
+              </ExternalLink>
+            </Text>
+            <Text>
+              <ExternalLink href="mailto:fatihkaradagg97@gmail.com">
+                Email
+              </ExternalLink>
+            </Text>
+          </HStack>
         </VStack>
         <Flex position="relative" pb={4} justifyContent="center">
           <AspectRatio flexShrink={0} ratio={1} w={300} h={300} as="figure">

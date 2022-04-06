@@ -1,9 +1,10 @@
-import { Global } from '@emotion/react'
+import { Global } from '@emotion/react';
 
 const Fonts = () => (
   <Global
     styles={`
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
     @font-face {
       font-family: 'Cal Sans';
       src: url('/fonts/CalSans-SemiBold.ttf');
@@ -15,5 +16,5 @@ const Fonts = () => (
     }
   `}
   />
-)
-export default Fonts
+);
+export default Fonts;
